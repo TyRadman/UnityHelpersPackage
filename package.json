@@ -1,0 +1,11 @@
+{
+  "name": "com.tyradman.unityhelpersxproplus",
+  "version": "1.0.0",
+  "displayName": "Unity Helpers X Pro Plus",
+  "description": "Contains useful classes for run and edit time.",
+  "unity": "2021.3",
+  "author": {
+    "name": "Ty Radman",
+    "url": "https://github.com/TyRadman"
+  }
+}
