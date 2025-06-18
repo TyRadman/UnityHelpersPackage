@@ -1,7 +1,0 @@
-{
-  "name": "UnityHelpersXProPlus.Editor",
-  "references": [
-    "UnityHelpersXProPlus"
-  ],
-  "includePlatforms": [ "Editor" ]
-}
