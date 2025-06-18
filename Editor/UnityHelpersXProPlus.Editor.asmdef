@@ -1,0 +1,8 @@
+{
+  "name": "UnityHelpersXProPlus.Editor",
+  "references": [
+    "UnityHelpersXProPlus"
+  ],
+  "optionalUnityReferences": [ "TestAssemblies" ],
+  "includePlatforms": [ "Editor" ]
+}
