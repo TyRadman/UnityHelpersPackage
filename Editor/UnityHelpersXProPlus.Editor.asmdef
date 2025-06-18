@@ -3,6 +3,5 @@
   "references": [
     "UnityHelpersXProPlus"
   ],
-  "optionalUnityReferences": [ "TestAssemblies" ],
   "includePlatforms": [ "Editor" ]
 }
