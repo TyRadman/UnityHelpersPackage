@@ -3,8 +3,6 @@ using UnityEditor;
 #endif
 using UnityEngine;
 
-namespace CustomAttributes
-{
     public class AllowCreationIfNull : PropertyAttribute
     {
         public string Path;
@@ -111,4 +109,3 @@ namespace CustomAttributes
         }
     }
 #endif
-}
