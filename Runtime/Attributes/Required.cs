@@ -38,7 +38,7 @@ namespace CustomAttributes
             {
                 GUI.color = Color.red;
                 Rect iconRect = new Rect(fieldRect.xMax, fieldRect.y, 20, 20);
-                Texture2D icon => AssetDatabase.LoadAssetAtPath<Texture2D>("Packages/com.tyradman.unityhelpersxproplusminus/Editor/Resources/T_WarningIcon.png");
+                Texture2D icon = AssetDatabase.LoadAssetAtPath<Texture2D>("Packages/com.tyradman.unityhelpersxproplusminus/Editor/Resources/T_WarningIcon.png");
                 GUI.Label(iconRect, new GUIContent(icon, "This field must have a value"));
                 GUI.color = Color.white; // Reset the icon color
             }
