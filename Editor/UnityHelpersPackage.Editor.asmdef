@@ -1,6 +1,6 @@
 {
     "name": "UnityHelpersPackage.Editor",
-    "rootNamespace": "CustomAttributes",
+    "rootNamespace": "",
     "references": [
         "UnityHelpersPackage.Runtime"
     ],
