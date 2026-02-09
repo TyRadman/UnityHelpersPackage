@@ -13,8 +13,6 @@ namespace CustomAttributes
     [CustomPropertyDrawer(typeof(Required))]
     public class RequiredPropertyDrawer : PropertyDrawer
     {
-        Texture2D icon = (Texture2D)EditorGUIUtility.Load("T_WarningIcon.png");
-
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             EditorGUI.BeginProperty(position, label, property);
@@ -40,6 +38,7 @@ namespace CustomAttributes
             {
                 GUI.color = Color.red;
                 Rect iconRect = new Rect(fieldRect.xMax, fieldRect.y, 20, 20);
+                Texture2D icon => AssetDatabase.LoadAssetAtPath<Texture2D>("Packages/com.tyradman.unityhelpersxproplusminus/Editor/Resources/T_WarningIcon.png");
                 GUI.Label(iconRect, new GUIContent(icon, "This field must have a value"));
                 GUI.color = Color.white; // Reset the icon color
             }
