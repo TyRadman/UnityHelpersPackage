@@ -81,4 +81,17 @@ public static class StringUtilities
 
         return message.ToString();
     }
+
+    /// <summary>
+    /// Returns the hex value of the color.
+    /// </summary>
+    /// <param name="color"></param>
+    /// <returns>The value of the color as a hex string.</returns>
+    public static string ToHex(this Color color)
+    {
+        return ((byte)(color.r * 255)).ToString("X2") +
+                ((byte)(color.g * 255)).ToString("X2") +
+                ((byte)(color.b * 255)).ToString("X2") +
+                ((byte)(color.a * 255)).ToString("X2");
+    }
 }
