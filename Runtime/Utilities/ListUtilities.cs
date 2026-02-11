@@ -66,7 +66,7 @@ public static class ListUtilities
     /// Returns false if the list is empty or uninitialized.
     /// </summary>
     /// <param name="list"></param>
-    public static bool IsEmpty(this IList list)
+    public static bool IsEmpty<T>(this IList<T> list)
     {
         return list == null || list.Count == 0;
     }
