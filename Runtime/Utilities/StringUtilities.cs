@@ -94,4 +94,18 @@ public static class StringUtilities
                 ((byte)(color.b * 255)).ToString("X2") +
                 ((byte)(color.a * 255)).ToString("X2");
     }
+
+    /// <summary>
+    /// Appends the caller's class name, method name, and line number to the string.
+    /// </summary>
+    /// <param name="value">The message or value to append the details to.</param>
+    /// <param name="line">Automatically populated by the compiler.</param>
+    /// <param name="filePath">Automatically populated by the compiler.</param>
+    /// <param name="methodName">Automatically populated by the compiler.</param>
+    /// <returns>A string formatted as "[ClassName.MethodName(LineNumber)] OriginalValue".</returns>
+    public static string Details(this string value, [CallerLineNumber] int line = 0, [CallerFilePath] string filePath = "", [CallerMemberName] string methodName = "")
+    {
+        string className = Path.GetFileNameWithoutExtension(filePath);
+        return $"[{className}.{methodName}({line})] {value}";
+    }
 }
