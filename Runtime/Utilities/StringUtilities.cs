@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
+using System.Runtime.CompilerServices;
 
 public static class StringUtilities
 {
