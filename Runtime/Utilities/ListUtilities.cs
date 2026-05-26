@@ -114,4 +114,15 @@ public static class ListUtilities
     {
         return list == null || list.Count == 0;
     }
+
+    public static bool TryFind<T>(this List<T> list, System.Predicate<T> match, out T foundElement)
+    {
+        foundElement = list.Find(match);
+        return list.Contains(foundElement);
+    }
+
+    public static T GetRandomItem<T>(params T[] elements)
+    {
+        return elements.RandomItem();
+    }
 }
