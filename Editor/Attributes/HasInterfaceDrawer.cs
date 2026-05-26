@@ -1,6 +1,5 @@
 using UnityEditor;
 using UnityEngine;
-using TankLike;
 
 [CustomPropertyDrawer(typeof(HasInterface))]
 public class HasInterfacePropertyDrawer : PropertyDrawer
