@@ -105,4 +105,48 @@ public static class Colors
     public static readonly Color OrangeRed = new Color32(255, 69, 0, 255);
     public static readonly Color Orchid = new Color32(218, 112, 214, 255);
     public static readonly Color PaleGoldenRod = new Color32(238, 232, 170, 255);
+
+    public static class Hex
+    {
+        public const string Black = "#000000";
+        public const string White = "#FFFFFF";
+        public const string Red = "#FF0000";
+        public const string Green = "#00FF00";
+        public const string Blue = "#0000FF";
+        public const string Yellow = "#FFFF00";
+        public const string Cyan = "#00FFFF";
+        public const string Magenta = "#FF00FF";
+        public const string Gray = "#808080";
+        public const string LightRed = "#FF8080";
+        public const string DarkRed = "#800000";
+        public const string LightGreen = "#80FF80";
+        public const string DarkGreen = "#008000";
+        public const string LightBlue = "#8080FF";
+        public const string DarkBlue = "#000080";
+        public const string LightYellow = "#FFFF80";
+        public const string DarkYellow = "#808000";
+        public const string LightCyan = "#80FFFF";
+        public const string DarkCyan = "#008080";
+        public const string LightMagenta = "#FF80FF";
+        public const string DarkMagenta = "#800080";
+        public const string LightOrange = "#FFB366";
+        public const string DarkOrange = "#CC6600";
+        public const string LightPurple = "#CC99FF";
+        public const string DarkPurple = "#800080";
+        public const string LightGray = "#BFBFBF";
+        public const string DarkGray = "#404040";
+        public const string Pink = "#FFBFCB";
+        public const string DarkPink = "#CC3366";
+        public const string Gold = "#FFD700";
+        public const string Violet = "#EE82EE";
+        public const string Teal = "#008080";
+        public const string SkyBlue = "#87CEEB";
+        public const string DeepSkyBlue = "#00BFFF";
+        public const string Coral = "#FF7F50";
+        public const string Mint = "#99FF99";
+        public const string Peach = "#FFDAB9";
+        public const string Lavender = "#E6E6FA";
+        public const string Plum = "#DDA0DD";
+        public const string Bronze = "#CD7F32";
+    }
 }
