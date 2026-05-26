@@ -90,4 +90,67 @@ public static class VectorUtilities
             vector.y + (float.IsNaN(y) ? 0 : y),
             vector.z + (float.IsNaN(z) ? 0 : z));
     }
+
+    /// <summary>
+    /// Converts a <see cref="Vector2"/> to a <see cref="Vector2Int"/> by truncating the float components.
+    /// </summary>
+    /// <param name="value">The Vector2 to convert.</param>
+    /// <returns>A Vector2Int with the truncated x and y values.</returns>
+    public static Vector2Int ToVector2Int(this Vector2 value)
+    {
+        return new Vector2Int((int)value.x, (int)value.y);
+    }
+
+    /// <summary>
+    /// Converts a <see cref="Vector2Int"/> to a <see cref="Vector3"/>, mapping x to x and y to z (XZ plane), with y set to 0.
+    /// </summary>
+    /// <param name="value">The Vector2Int to convert.</param>
+    /// <returns>A Vector3 on the XZ plane.</returns>
+    public static Vector3 ToVector3(this Vector2Int value)
+    {
+        return new Vector3(value.x, 0f, value.y);
+    }
+
+    /// <summary>
+    /// Converts a <see cref="Vector3"/> to a <see cref="Vector2"/> by dropping the z component.
+    /// </summary>
+    /// <param name="vector">The Vector3 to convert.</param>
+    /// <returns>A Vector2 with the x and y values of the original vector.</returns>
+    public static Vector2 ToVector2(this Vector3 vector)
+    {
+        return new Vector2(vector.x, vector.y);
+    }
+
+    /// <summary>
+    /// Returns a random point inside a sphere with the given center and radius.
+    /// </summary>
+    /// <param name="center">The center of the sphere.</param>
+    /// <param name="radius">The radius of the sphere.</param>
+    /// <returns>A random point inside the sphere.</returns>
+    public static Vector3 GetRandomPointInsideSphere(Vector3 center, float radius)
+    {
+        return center + Random.insideUnitSphere * radius;
+    }
+
+    /// <summary>
+    /// Returns the centroid (average position) of any number of points.
+    /// </summary>
+    /// <param name="points">The list of points to average.</param>
+    /// <returns>The centroid of the provided points, or <see cref="Vector3.zero"/> if the list is null or empty.</returns>
+    public static Vector3 GetCentroid(List<Vector3> points)
+    {
+        if (points == null || points.Count == 0)
+        {
+            Debug.LogWarning("GetCentroid called with empty or null point list.");
+            return Vector3.zero;
+        }
+
+        Vector3 sum = Vector3.zero;
+        for (int i = 0; i < points.Count; i++)
+        {
+            sum += points[i];
+        }
+
+        return sum / points.Count;
+    }
 }

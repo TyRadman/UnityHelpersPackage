@@ -116,4 +116,9 @@ public static class StringUtilities
     {
         return $"<size={size}>{text}</size>";
     }
+
+    public static void Log(this string value)
+    {
+        Debug.Log(value);
+    }
 }
