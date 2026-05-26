@@ -2,6 +2,39 @@ using UnityEngine;
 
 public static class Colors
 {
+    // Basic Unity colors
+    public static readonly Color White = new Color32(255, 255, 255, 255);
+    public static readonly Color Red = new Color32(255, 0, 0, 255);
+    public static readonly Color Yellow = new Color32(255, 255, 0, 255);
+    public static readonly Color Clear = new Color32(0, 0, 0, 0);
+
+    // Light/dark variants
+    public static readonly Color LightRed = new Color32(255, 128, 128, 255);
+    public static readonly Color LightMagenta = new Color32(255, 128, 255, 255);
+    public static readonly Color DarkYellow = new Color32(128, 128, 0, 255);
+    public static readonly Color LightOrange = new Color32(255, 179, 102, 255);
+    public static readonly Color LightPurple = new Color32(204, 153, 255, 255);
+    public static readonly Color DarkPurple = new Color32(128, 0, 128, 255);
+    public static readonly Color LightBrown = new Color32(179, 102, 26, 255);
+    public static readonly Color DarkBrown = new Color32(102, 51, 13, 255);
+
+    // Grays
+    public static readonly Color SlateGray = new Color32(112, 128, 144, 255);
+    public static readonly Color Silver = new Color32(192, 192, 192, 255);
+
+    // Additional named colors
+    public static readonly Color Pink = new Color32(255, 192, 204, 255);
+    public static readonly Color DarkPink = new Color32(204, 51, 102, 255);
+    public static readonly Color Bronze = new Color32(204, 128, 51, 255);
+    public static readonly Color Teal = new Color32(0, 128, 128, 255);
+    public static readonly Color Violet = new Color32(237, 130, 237, 255);
+    public static readonly Color Mint = new Color32(153, 255, 153, 255);
+    public static readonly Color Peach = new Color32(255, 217, 179, 255);
+    public static readonly Color Tomato = new Color32(255, 99, 71, 255);
+    public static readonly Color Salmon = new Color32(250, 128, 115, 255);
+    public static readonly Color SeaGreen = new Color32(46, 140, 87, 255);
+    public static readonly Color Plum = new Color32(222, 161, 222, 255);
+    public static readonly Color Thistle = new Color32(217, 191, 217, 255);
     public static readonly Color AliceBlue = new Color32(240, 248, 255, 255);
     public static readonly Color AntiqueWhite = new Color32(250, 235, 215, 255);
     public static readonly Color Aqua = new Color32(0, 255, 255, 255);
