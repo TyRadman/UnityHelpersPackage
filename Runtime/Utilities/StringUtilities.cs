@@ -110,4 +110,10 @@ public static class StringUtilities
         string className = Path.GetFileNameWithoutExtension(filePath);
         return $"[{className}.{methodName}({line})] {value}";
     }
+
+    
+    public static string Size(this string text, int size)
+    {
+        return $"<size={size}>{text}</size>";
+    }
 }
