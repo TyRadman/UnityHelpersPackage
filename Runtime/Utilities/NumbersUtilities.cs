@@ -83,4 +83,14 @@ public static class NumbersUtilities
     {
         return Mathf.FloorToInt(currentTime / 60f / 60f);
     }
+    
+    public static void Log(this int value)
+    {
+        Debug.Log(value);
+    }
+
+    public static void Log(this float value)
+    {
+        Debug.Log(value);
+    }
 }
