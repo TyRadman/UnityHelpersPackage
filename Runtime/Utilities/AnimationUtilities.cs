@@ -50,4 +50,19 @@ public static class AnimationUtilities
         animation.clip = clip;
         animation.Play();
     }
+
+    public static void PlaySafe(this Animation animation)
+    {
+        if (animation == null)
+        {
+            return;
+        }
+
+        if (animation.isPlaying)
+        {
+            animation.Stop();
+        }
+
+        animation.Play();
+    }
 }
