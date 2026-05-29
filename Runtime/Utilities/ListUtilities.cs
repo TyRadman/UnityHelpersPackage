@@ -11,6 +11,11 @@ public static class ListUtilities
     /// <returns>A random element of type <typeparamref name="T" />.</returns>
     public static T RandomItem<T>(this IList<T> list)
     {
+        if (list == null || list.Count == 0)
+        {
+            return default(T);
+        }
+        
         return list[Random.Range(0, list.Count)];
     }
 
@@ -23,6 +28,11 @@ public static class ListUtilities
     /// <returns>A random item from the list.</returns>
     public static T RandomItem<T>(this IList<T> list, bool removeItem)
     {
+        if (list == null || list.Count == 0)
+        {
+            return default(T);
+        }
+
         T selectedItem = list[Random.Range(0, list.Count)];
 
         if (removeItem)
